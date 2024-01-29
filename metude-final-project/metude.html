@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width,inital-scale=1.0" />
+      <meta charset="utf-8" />
+      <title> Metude Advertisement Website </title>
+      <link rel="stylesheet" href="my-style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+   <body>
+      <section class="header">
+         <nav>
+            <a href="metude.html"  class="my_image"><img src="image/logo.png" alt="logo"/></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="closeNav()"></i>
+               <ul>
+                  <li><a href="home.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="blog.html">BLOG</a></li>
+                  <li><a href="support.html">SUPPORT</a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars" onclick="openNav()"></i>
+         </nav>
+         <div class="text-box" id="main">
+            <h1> Life's beautiful with music</h1>
+            <ul>
+               <li>Enjoy many different genre and a wide range of songs.</li>
+               <li>Download your favorite song and play it offline.</li>
+               <li>Listen to many different podcast and audio show.</li>
+            </ul>
+            <a href="" class="download">Download for free</a>
+         </div>
+      </section>
+      <script>
+         var navLinks = document.getElementById("navLinks");
+         function openNav() {
+          navLinks.style.right = "0";
+           document.body.style.backgroundColor = "#D3D3D3";
+         }
+         
+         function closeNav() {
+            navLinks.style.right= "-200px";
+             document.body.style.backgroundColor = "white";
+         }
+      </script>
+      <section class="footer">
+         <h4>&copy; 2022 MEtude, Inc. All rights reserved.<br> <a href="bibliography.html"  class="bio">Bibliography</a></h4>
+         <p> Made with <i class="fa fa-code"></i> and CSS by J </p>
+      </section>
+   </body>
+</html>

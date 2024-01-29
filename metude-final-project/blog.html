@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta name="viewport" content="width=device-width,inital-scale=1.0" />
+      <meta charset="utf-8" />
+      <title> Metude Advertisement Website </title>
+      <link rel="stylesheet" href="my-style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+   <body>
+      <section class="blog-header">
+         <nav>
+            <a href="metude.html"  class="my_image"><img src="image/logo.png" alt="logo"/></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="closeNav()"></i>
+               <ul>
+                  <li><a href="home.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="blog.html">BLOG</a></li>
+                  <li><a href="support.html">SUPPORT</a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars" onclick="openNav()"></i>
+         </nav>
+         <h1>The Music Blog </h1>
+         <p> A humble attempt to show everyone <br>music we enjoy greatly.</p>
+      </section>
+      <section class="about-us">
+         <div class="row">
+            <div class="about-col">
+               <h1>THE BLOG POST:</h1>
+               <h3>post new every week</h3>
+               <p>
+                  When it comes to keeping up with the newest music news and releases, music fans have never had more options. However, with so much options, deciding which sites are worth reading and which aren't may be challenging.
+               </p>
+               <p>
+                  There’s a never ending amount of music being added to the site and if your main goal is to discover new music then you’ll be sure to have plenty to look through here.
+               </p>
+            </div>
+            <div class="about-col">
+               <img src="image/blog.png" alt="blog">
+            </div>
+         </div>
+      </section>
+      <section id="blog">
+         <div class="blog-heading">
+            <h1> Blog Posts</h1>
+            <span>Recent Posts</span>
+         </div>
+         <div class="blog-container">
+            <div class="blog-box">
+               <div class="blog-img">
+                  <img src="image/popular.png" alt="Blog">
+               </div>
+               <div class="blog-text">
+                  <span>20 May 2021/ Genre
+                  </span>
+                  <a href="https://musicforproductions.com/what-are-the-reasons-pop-music-is-so-popular/#:~:text=Rhythms%20make%20us%20sing%20along,a%20popular%20genre%20among%20all." class="blog-title"> Why Pop Music Is So Addictive?</a>
+                  <p>According to the musician, pop music is inherently popular because it creates a sense of familiarity for listeners. Therefore, when they hear the same 'woop' throughout the genre, they're more inclined to ease into a piece of music they've never heard because it sounds familiar.</p>
+                  <a href="https://musicforproductions.com/what-are-the-reasons-pop-music-is-so-popular/#:~:text=Rhythms%20make%20us%20sing%20along,a%20popular%20genre%20among%20all." >Read More</a>
+               </div>
+            </div>
+            <div class="blog-box">
+               <div class="blog-img">
+                  <img src="image/cassette.png" alt="Blog">
+               </div>
+               <div class="blog-text">
+                  <span>2 June 2021/ Music
+                  </span>
+                  <a href="https://www.savethemusic.org/blog/how-does-music-affect-society/" class="blog-title"> The Song That Shape Our Memories</a>
+                  <p>Over the decades, music has consistently had a significant cultural and political impact on real-world events and provided power for positive change and unity at historic moments.Music has shaped cultures and societies around the world, passed down from generation to generation. </p>
+                  <a href="https://www.savethemusic.org/blog/how-does-music-affect-society/" >Read More</a>
+               </div>
+            </div>
+            <div class="blog-box">
+               <div class="blog-img">
+                  <img src="image/vinyl.png" alt="Blog">
+               </div>
+               <div class="blog-text">
+                  <span>28 June 2021/ Music tech
+                  </span>
+                  <a href="https://www.whatisvinyl.com/what-are-vinyl-records/" class="blog-title">What Are Vinyl Records? Everything You Need To Know </a>
+                  <p>Did you overhear a group discussing vinyl records? Or, you might have encountered them while helping your grandparents clean their basement. Well, if you’ve hundreds of questions hovering over your mind right now regarding vinyl records, you’re at the right place!</p>
+                  <a href="https://www.whatisvinyl.com/what-are-vinyl-records/" >Read More</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <script>
+         var navLinks = document.getElementById("navLinks");
+         function openNav() {
+          navLinks.style.right = "0";
+           document.body.style.backgroundColor = "#D3D3D3";
+         }
+         
+         function closeNav() {
+            navLinks.style.right= "-200px";
+             document.body.style.backgroundColor = "white";
+         }
+      </script>
+      <section class="footer">
+         <h4>&copy; 2022 MEtude, Inc. All rights reserved.<br> <a href="bibliography.html"  class="bio">Bibliography</a></h4>
+         <p> Made with <i class="fa fa-code"></i> and CSS by J </p>
+      </section>
+   </body>
+</html>
